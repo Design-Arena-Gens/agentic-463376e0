@@ -35,7 +35,7 @@
       status.textContent = 'Calling…';
       out.textContent = '';
       try {
-        const res = await fetch('/api/index');
+        const res = await fetch('/api');
         const text = await res.text();
         out.textContent = text;
         status.textContent = res.ok ? 'Success' : `Error ${res.status}`;
